@@ -4,7 +4,8 @@
   "description": "This project is an experimental project of react, graphQL , relay and friend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node server.js",
+    "nodemon": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/a0099654/react-graphql-flux/issues"
   },
-  "homepage": "https://github.com/a0099654/react-graphql-flux#readme"
+  "homepage": "https://github.com/a0099654/react-graphql-flux#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
