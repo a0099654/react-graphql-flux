@@ -4,7 +4,7 @@
   "description": "This project is an experimental project of react, graphQL , relay and friend",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js --exec babel-node --presets es2015,stage-2",
+    "start": "nodemon server.js --exec babel-node --presets react,es2015,stage-2",
     "build": "webpack -w -d"
   },
   "repository": {
