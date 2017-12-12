@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
 
 let app = express();
 
-app.use(express.static('public')); //To server the static file
+app.use(express.static('public'));
+
 app.listen(3000);
