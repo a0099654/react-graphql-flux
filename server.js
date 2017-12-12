@@ -6,7 +6,6 @@ let db;
 
 app.use(express.static('public'));
 
-
 MongoClient.connect("mongodb://localhost:27017/rgrjs", (err, database) => {
     if (err) throw err;
 
