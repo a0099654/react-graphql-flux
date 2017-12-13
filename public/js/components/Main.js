@@ -15,11 +15,7 @@ export default class Main extends React.Component {
         limit: 5
     }
 
-    constructor(props) {
-        super(props);
-        this.state = _getAppState();
-        this.onChange = this.onChange.bind(this);
-    }
+    state = _getAppState();
 
     componentDidMount() {
         API.fetchLinks();
@@ -30,7 +26,7 @@ export default class Main extends React.Component {
         LinkStores.removeListener("change", this.onChange);
     }
 
-    onChange() {
+    onChange = () => {
         this.setState(_getAppState());
     }
     render() {
