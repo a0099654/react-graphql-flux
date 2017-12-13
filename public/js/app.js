@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import Main from './components/Main';
 
-ReactDOM.render(<Main limit={3} />, document.getElementById('root'));
+ReactDOM.render(<Main limit={5} />, document.getElementById('root'));

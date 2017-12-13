@@ -1,17 +1,18 @@
 import React from 'react';
 import API from '../API';
 import LinkStores from '../stores/LinkStore';
+import PropTypes from 'prop-types'; 
 
 let _getAppState = () => {
     return { links: LinkStores.getAll() }
 }
 export default class Main extends React.Component {
     static propTypes = {
-        limit: React.PropTypes.number
+        limit: PropTypes.number
     }
     
     static defaultProps = {
-        limit: 4
+        limit: 5
     }
 
     constructor(props) {
@@ -47,4 +48,3 @@ export default class Main extends React.Component {
         );
     }
 }
-
