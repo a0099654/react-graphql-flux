@@ -6,6 +6,14 @@ let _getAppState = () => {
     return { links: LinkStores.getAll() }
 }
 export default class Main extends React.Component {
+    static propTypes = {
+        limit: React.PropTypes.number
+    }
+    
+    static defaultProps = {
+        limit: 4
+    }
+
     constructor(props) {
         super(props);
         this.state = _getAppState();
@@ -39,3 +47,4 @@ export default class Main extends React.Component {
         );
     }
 }
+
