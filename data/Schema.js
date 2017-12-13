@@ -1,7 +1,8 @@
 import {
     GraphQLSchema,
     GraphQLObjectType,
-    GraphQLInt
+    GraphQLInt,
+    GraphQLString
 } from 'graphql';
 
 let Schema = new GraphQLSchema({
@@ -11,6 +12,10 @@ let Schema = new GraphQLSchema({
             counter: {
                 type: GraphQLInt,
                 resolve: () => 42
+            },
+            message: {
+                type: GraphQLString,
+                resolve: () => "hello world"
             }
         })
     })

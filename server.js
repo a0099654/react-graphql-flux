@@ -9,7 +9,8 @@ let db;
 app.use(express.static('public'));
 
 app.use('/graphql', GraphQLHTTP({
-    schema
+    schema,
+    graphiql: true
 }));
 
 MongoClient.connect("mongodb://localhost:27017/rgrjs", (err, database) => {
